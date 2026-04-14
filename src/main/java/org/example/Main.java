@@ -6,14 +6,19 @@ public class Main {
         String positionAtWork = "Старший шаурма-инженер";
         int ratePerShift = 16000;
         int numberOfShifts = 15;
-        int award = 10000;
-        int fine = 100;
-        int price = 200;
-        int numberOfSold = 3000;
+        int bonus = 10000;
+        int fineForBurntShawarma = 100;
+        int priceOfShawarma = 200;
+        int quantitySold = 3000;
 
-        System.out.println("Сотрудник: " + employeeName + ", должность: " + positionAtWork);
-        System.out.println("Зарплата без премии: " + numberOfShifts * ratePerShift);
-        System.out.println("Итоговая зарплата: " + ((numberOfShifts * ratePerShift + award) - fine * 4));
-        System.out.println("Выручка: " + price * numberOfSold);
+        int salaryWithoutBonus = numberOfShifts * ratePerShift;
+        int finalSalary = ((numberOfShifts * ratePerShift + bonus) - fineForBurntShawarma * 4);
+        int revenue = priceOfShawarma * quantitySold;
+
+        System.out.println("Сотрудник: " + employeeName);
+        System.out.println("Должность: " + positionAtWork);
+        System.out.println("Зарплата без премии: " + salaryWithoutBonus);
+        System.out.println("Итоговая зарплата: " + finalSalary);
+        System.out.println("Выручка: " + revenue);
     }
 }
