@@ -1,6 +1,6 @@
 package org.example;
 
-public class Main {
+public class Homework1 {
     public static void main(String[] args) {
         String employeeName = "Глеб";
         String positionAtWork = "Старший шаурма-инженер";
