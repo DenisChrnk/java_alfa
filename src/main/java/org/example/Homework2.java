@@ -13,13 +13,14 @@ public class Homework2 {
 
         boolean scoringResult;
         double voluntaryContribution = 7.5 * amountOnTheAccount/100;
+        String roundedContribution = String.format("%.2f",voluntaryContribution);
 
 
         if (ageVisitor >= 18 && (amountOnTheAccount > 50_000 || existInvitation) && inBlacklist){
             scoringResult = true;
         } else scoringResult = false;
 
-        System.out.println(scoringResult);
-        System.out.printf("%.2f", voluntaryContribution);
+        System.out.println("Посетитель проходит? - " + scoringResult);
+        System.out.println("Сумма взноса - " + roundedContribution + " денег");
     }
 }
